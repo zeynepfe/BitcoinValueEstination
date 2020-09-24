@@ -1,0 +1,16 @@
+package tr.edu.gazi.bm.bitirme2018.flink;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@EnableScheduling
+@EnableAsync
+public class FlinkMainApp {
+    public static void main(String[] args) {
+        SpringApplication.run(FlinkMainApp.class, args);
+    }
+}
